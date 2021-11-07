@@ -1,11 +1,9 @@
 import React from 'react'
-import useMousePosition from '../hooks/useMousePosition';
+import useBackgroundByPosition from '../hooks/useBackgroundByPosition';
 
 const MouseApp = () => {
     
-    const position = useMousePosition();
-
-    const background = position.x > window.innerWidth/2 ? 'green' : 'red'; 
+    const {position, background} = useBackgroundByPosition();
 
     return (
         <div className="container p-3" style={{background, height:"50vh"}}>
