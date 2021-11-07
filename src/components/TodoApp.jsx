@@ -33,7 +33,7 @@ const TodoApp = () => {
     const handleAddTodoFormSubmit = (e) => {
         e.preventDefault();
         const newTodo = {
-            id: Math.floor(Math.random()*1000),
+            id: Date.now(),
             title:formInput
         }
         addNewTodo(newTodo);
@@ -47,7 +47,7 @@ const TodoApp = () => {
 
     return (
         <div className="container">
-            <h1>TodoApp</h1>
+            <h2 className="my-3">Todo App</h2>
             <div className="add-todo">
                 <h3 className="mt-3">Add new Todo</h3>
                 <form onSubmit={handleAddTodoFormSubmit}>

@@ -1,5 +1,6 @@
 import CounterApp from "./components/CounterApp";
 import TodoApp from "./components/TodoApp";
+import MouseApp from './components/MouseApp';
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
       <CounterApp />
       <hr />
       <TodoApp />
+      <hr />
+      <MouseApp />
+      <hr />
     </div>
   );
 }

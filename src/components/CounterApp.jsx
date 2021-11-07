@@ -8,7 +8,8 @@ const CounterApp = () => {
     
     return (
         <div className="container">
-            <h1>Count: {count}</h1>
+            <h2 className="my-3">Counter App</h2>
+            <h3>Count: {count}</h3>
             <button className="btn btn-primary m-2" onClick={increment}>Increment</button>
             <button className="btn btn-primary m-2" onClick={decrement}>Decrement</button>
             <button className="btn btn-primary m-2" onClick={reset}>Reset</button>
